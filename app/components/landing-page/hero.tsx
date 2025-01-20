@@ -1,4 +1,8 @@
-export default function Hero() {
+import TextInput from "../ui/textInput";
+import Button from "../ui/button";
+
+
+function Hero() {
   return (
     <div className="flex border">
       <div className="w-full flex flex-col gap-2 mt-[35vh] border">
@@ -10,10 +14,10 @@ export default function Hero() {
           <br />
           Acompanhe o engajamento com analytics de cliques.
         </h2>
-        <div className="flex items-center gap-2 w-full -mt-[10vh]">
-          <span className="text-white text-xl">openinbio.com</span>
-          <input type="text" />
-          <button>Criar Agora</button>
+        <div className="flex items-center gap-2 w-full mt-[10vh]">
+          <span className="text-white text-xl">openinbio.com/</span>
+          <TextInput placeholder="Seu link"/>
+          <Button>Criar Agora</Button>
         </div>
       </div>
       <div className="w-full flex items-center justify-center bg-[radial-gradiente(circle_at_50%_50%_#4B2DBB, transparent_55%)]">
@@ -33,3 +37,6 @@ export default function Hero() {
     </div>
   );
 }
+
+
+export default Hero;
