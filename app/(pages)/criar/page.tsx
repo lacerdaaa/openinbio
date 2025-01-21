@@ -19,6 +19,9 @@ export default function criar() {
             <TextInput/>
             <Button className="w-[126px]">Criar</Button>
         </form>
+        <div>
+            <span className="text-accent-pink">Erro de Exemplo</span>
+        </div>
     </div>
    </div>
  );

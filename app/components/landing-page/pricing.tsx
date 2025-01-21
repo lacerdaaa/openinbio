@@ -33,7 +33,7 @@ export default function Pricing() {
             <span className="uppercase text-xs font-bold">Recomendado</span>
           </div>
           <div className="p-[1.6px] bg-[linear-gradient(90deg,#4B2DBB_0%,#B5446B_100%)] rounded-b-2xl">
-            <div className="w-full bg-background-secondary p-8 flex flex-col gap-7 rounded-b-2xl">
+            <div className="w-full bg-background-secondary p-8 flex flex-col gap-7 rounded-b-2xl rounded-t-lg">
               <div className="flex flex-col">
                 <span className="text-white font-bold text-2xl">Vitalício</span>
                 <span className="text-content-body">Economize com</span>
