@@ -1,5 +1,5 @@
 import { FirestoreAdapter } from "@auth/firebase-adapter";
-import NextAuth, { NextAuthConfig } from "next-auth";
+import NextAuth from "next-auth";
 import { firebaseCert } from "./firebase"
 import Google from "next-auth/providers/google";
 

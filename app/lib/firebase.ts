@@ -4,9 +4,9 @@ import { getFirestore } from "firebase-admin/firestore";
 import { getStorage } from "firebase-admin/storage";
 
 //certificado p inicializar 
-const decodedKey = Buffer.from(process.env.FIREBASE_PRIVATE_KEY!, "base64").toString("utf-8")
+const decodedKey = Buffer.from(process.env.FIREBASE_PRIVATE_KEY_BASE64!, "base64").toString("utf-8")
 
-export const firebaseCert = cert({ 
+export const firebaseCert = cert({
     projectId: process.env.FIREBASE_PROJECT_ID,
     clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
     privateKey: decodedKey,
@@ -14,7 +14,7 @@ export const firebaseCert = cert({
 
 //instancia do app
 
-if(!getApps().length) {
+if (!getApps().length) {
     initializeApp({
         credential: firebaseCert,
         storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
