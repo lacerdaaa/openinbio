@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# enviroment
+openinbio-feb9e-firebase-adminsdk-fbsvc-2948d62a58.json
