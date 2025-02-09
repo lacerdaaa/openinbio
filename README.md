@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 OpenInBio
 
-## Getting Started
+OpenInBio é um projeto desenvolvido com Next.js, Firebase e NextAuth, utilizando Tailwind CSS para estilização. O objetivo do OpenInBio é oferecer uma plataforma personalizada para compartilhar links de forma organizada e estilizada. 🎨
 
-First, run the development server:
+## 🛠️ Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js** ⚛️ - Framework React para renderização no servidor e otimização de páginas.
+- **Firebase** 🔥 - Utilizado para autenticação, Firestore Database e Storage.
+- **NextAuth.js** 🔑 - Gerenciamento de autenticação com provider do Firebase.
+- **Tailwind CSS** 🎨 - Estilização moderna e responsiva.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Funcionalidades
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- ✅ Autenticação de usuários via Firebase.
+- ✅ Criação e personalização de páginas de links.
+- ✅ Interface responsiva e amigável.
+- ✅ Integração com Firestore para armazenamento dinâmico de links.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Instalação e Uso
 
-## Learn More
+1. Clone o repositório:
+   ```sh
+   git clone https://github.com/lacerdaaa/openinbio.git
+   cd openinbio
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Instale as dependências:
+   ```sh
+   npm install
+   # ou
+   yarn install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Configure as variáveis de ambiente criando um arquivo `.env.local` com os seguintes dados:
+   ```env
+   NEXT_PUBLIC_FIREBASE_API_KEY=SEU_API_KEY
+   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=SEU_AUTH_DOMAIN
+   NEXT_PUBLIC_FIREBASE_PROJECT_ID=SEU_PROJECT_ID
+   NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=SEU_STORAGE_BUCKET
+   NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=SEU_SENDER_ID
+   NEXT_PUBLIC_FIREBASE_APP_ID=SEU_APP_ID
+   NEXTAUTH_URL=http://localhost:3000
+   AUTH_SECRET
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. Execute o projeto em ambiente de desenvolvimento:
+   ```sh
+   npm run dev
+   # ou
+   yarn dev
+   ```
 
-## Deploy on Vercel
+5. Acesse no navegador: [http://localhost:3000](http://localhost:3000) 🌍
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚢 Deploy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O OpenInBio pode ser facilmente implantado na **Vercel**. Para isso:
+- 🛠️ Configure as variáveis de ambiente na Vercel.
+- 🔄 Faça o deploy diretamente do repositório no GitHub.
+
+## 🤝 Contribuição
+
+Sinta-se à vontade para contribuir com melhorias! 💡 Basta:
+1. Fazer um fork do repositório.
+2. Criar uma branch com sua feature (`git checkout -b minha-feature`).
+3. Comitar suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`).
+4. Enviar para o repositório remoto (`git push origin minha-feature`).
+5. Abrir um Pull Request. 🚀
+
+---
+
+💻 Desenvolvido por [oLacerdadev](https://github.com/lacerdaaa).
+
